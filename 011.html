@@ -1,0 +1,58 @@
+<html>
+<head>
+</head>
+<style>
+div.outer {background-color: #555555;
+            height: 130px;
+            margin-bottom: 10px;
+            width: 600px;}
+div.inner {background-color: #cccccc;}
+
+div.top{
+    width:180px; 
+    height: 100px; 
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 12px;  
+}
+
+div.big{position: absolute; height: 100px; width: 130px; display: inline-block; margin-top:12px;}
+
+div.small{position: absolute; height: 75px; width: 130px; display: inline-block;margin-top: 12px;}
+
+div.thin{height: 35px; width: 290px; display: inline-block; margin-top: 12px; margin-left: 5px;}
+
+div.fat{height: 100px; width: 290px; display: inline-block; margin-top: 12px; margin-left: 5px;}
+
+div#first{position: static; margin-left: 20px;}
+
+div#second{margin-left: 160px;}
+
+div#third{margin-left: 300px;}
+
+div#last{margin-left: 440px;}
+
+</style>
+<body>
+
+<h1>AAAAAHHHHHH</h1>
+<div class="outer">
+    <div class="inner top"></div>
+    <div class="inner top"></div>
+    <div class="inner top"></div>
+</div>
+
+<div class="outer">
+    <div id="last" class="inner small"></div>
+    <div id="third" class="inner big"></div>
+    <div id="second" class="inner small"></div>
+    <div id="first" class="inner big"></div>
+</div>
+
+<div class="outer">
+    <div class="inner thin"></div>
+    <div class="inner fat"></div>
+</div>
+
+</body>
+</html>
